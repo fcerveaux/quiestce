@@ -1,0 +1,233 @@
+<head>
+      <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Qui est-ce ?</h1>
+<h1> Les pionnier.e.s du numérique</h1>
+<p>Bienvenue dans cette version numérique du plateau de jeu "Qui est-ce ?" au sujet des pionniers et pionnières du numérique !</p>
+<p>Votre objectif sera d'identifier un personnage choisi par votre adversaire.</p>
+
+<h3>Règles du jeu</h3>
+<ol>
+  <li>Sélectionnez le personnage que votre adversaire devra identifier.</li>
+  <li>A tour de rôle, posez une question fermée (réponse par OUI ou par NON) NE portant PAS sur l'apparence physique ou sur le genre des personnages.</li>
+  <li>Vous pourrez retourner les portraits ci-dessous au fur et à mesure que vous les éliminez.</li>
+</ol>
+
+<h2>1) Sélection du personnage de l'adversaire :</h2>
+<div class="grid character">
+  <img src="https://i.postimg.cc/9X93SjqX/ada-lovelace-retouch.png" class="character" onclick="selectCharacter(this)">
+  <img src="https://i.postimg.cc/sDRFC0pY/alan-turing-retouch.png" class="character" onclick="selectCharacter(this)">
+  <img src="https://i.postimg.cc/bwzKsDVd/Alice-Recoque-retouch.jpg" class="character" onclick="selectCharacter(this)">
+  <img src="https://i.postimg.cc/52nDv4Dg/blaise-pascal-retouch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/jj2mhVbb/Dorothy-Vaughan-retouch.jpg" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/rmtHvSsZ/Frances-Allen-retouch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/j201KLJx/george-boole-retouch.jpg" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/PfYcyzBP/grace-hopper-retouch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/WbVyHqvS/hedy-lamarr-retourch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/m2SnfZZ4/katherine-johnson-retouch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/P53FJ68F/Margaret-Hamilton-retouch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/d0hNy82Q/Marie-Paule-Cani-retouch.jpg" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/MTRssq3h/Rose-Dieng-Kuntz-for-Wiki-Unseen-cropped.jpg" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/qqT1SS9g/shafi-goldwasser-retouch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/Y26nY2WF/stephanie-shirley-retouch.png" class="character" onclick="selectCharacter(this)">
+    <img src="https://i.postimg.cc/L8XNcz0k/tim-berners-lee-retouch.png" class="character" onclick="selectCharacter(this)">
+</div>
+
+<h2>2) Votre plateau :</h2>
+<div class="grid card">
+  <div class="card">
+    <div class="card-name">Frances Allen</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/rmtHvSsZ/Frances-Allen-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Tim Berners Lee</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/L8XNcz0k/tim-berners-lee-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+   </div>
+  
+   <div class="card">
+     <div class="card-name">George Boole</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/j201KLJx/george-boole-retouch.jpg">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Marie-Paule Cani</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/d0hNy82Q/Marie-Paule-Cani-retouch.jpg">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Rose Dieng-Kuntz</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/MTRssq3h/Rose-Dieng-Kuntz-for-Wiki-Unseen-cropped.jpg">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Shafi Goldwasser</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/qqT1SS9g/shafi-goldwasser-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Margaret Hamilton</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/P53FJ68F/Margaret-Hamilton-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Grace Hopper</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/PfYcyzBP/grace-hopper-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+   <div class="card">
+     <div class="card-name">Katherine Johnson</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/m2SnfZZ4/katherine-johnson-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Hedy Lamarr</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/WbVyHqvS/hedy-lamarr-retourch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+   <div class="card">
+     <div class="card-name">Ada Lovelace</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/9X93SjqX/ada-lovelace-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+   <div class="card">
+     <div class="card-name">Blaise Pascal</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/52nDv4Dg/blaise-pascal-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Alice Recoque</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/bwzKsDVd/Alice-Recoque-retouch.jpg">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+  <div class="card">
+    <div class="card-name">Stephanie Shirley</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/Y26nY2WF/stephanie-shirley-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+   <div class="card">
+     <div class="card-name">Alan Turing</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/sDRFC0pY/alan-turing-retouch.png">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+    </div>
+  
+   <div class="card">
+     <div class="card-name">Dorothy Vaughan</div>
+    <div class="card-inner" onclick="flipCard(this)">
+      <div class="card-front">
+        <img src="https://i.postimg.cc/jj2mhVbb/Dorothy-Vaughan-retouch.jpg">
+      </div>
+      <div class="card-back">
+        <img src="https://i.postimg.cc/j5Gp5MBr/fond-chatgpt-2.jpg">
+      </div>
+    </div>
+   </div>
+</div>
+<script src="script.js"></script>
+</body>
